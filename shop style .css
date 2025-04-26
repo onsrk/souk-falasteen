@@ -1,0 +1,65 @@
+.shop-header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f5f5f5;
+  }
+  
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .product-card {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .hero {
+    background: url("pexels-enginakyurt-15483667.jpg") center/cover no-repeat;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
